@@ -1,10 +1,12 @@
-This script finds users that are logged in locally. When the who command is run, this only searches for users who have "tty" in the line, not "pts", as that means they are logged in through ssh. 
+##findUser - Lawson##
+
+This script searches for the username given in the Purdue CS computer network. It will tell you if someone is logged in locally or remotely, and where they are logged in from.  
+
+NOTE: You must be logged in and connected to the Purdue CS network. You also must have your SSH keys configured properly so that passwords are not needed, but that is the defualt configuration for most people.  
 
 To use, type
-./findUser.sh <name>
-
-ex
-
-./findUser.sh hoffmant
+```bash
+./findUser.sh <username>
+```
 
 

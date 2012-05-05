@@ -11,6 +11,7 @@ function findUser {
 }
 
 
+#Cycle through all the machines and run findUser on each
 
 for id in {01..13}; do
 	findUser sac${id} &
