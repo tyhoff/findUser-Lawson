@@ -1,0 +1,10 @@
+This script finds users that are logged in locally. When the who command is run, this only searches for users who have "tty" in the line, not "pts", as that means they are logged in through ssh. 
+
+To use, type
+./findUser.sh <name>
+
+ex
+
+./findUser.sh hoffmant
+
+
