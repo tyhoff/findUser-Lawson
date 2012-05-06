@@ -29,5 +29,13 @@ for i in {1..5}; do
 	done
 done
 
+for id in {00..23}; do
+	findUser escher${id} &
+done
+
+for id in {00..21}; do
+	findUser xinu${id} &
+done
+
 sleep 2 
 kill -9 $$
