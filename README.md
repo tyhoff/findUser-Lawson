@@ -1,12 +1,15 @@
 ##findUser - Lawson##
 
-This script searches for the username given in the Purdue CS computer network. It will tell you if someone is logged in locally or remotely, and where they are logged in from.  
+This script has two ways of searching for a user in the CS network.
 
-NOTE: You must be logged in and connected to the Purdue CS network. You also must have your SSH keys configured properly so that passwords are not needed, but that is the defualt configuration for most people.  
-
-To use, type
+1. Search by username
 ```bash
-./findUser.sh <username>
+./findUser.sh -u <username
 ```
 
+2. Search by first and last name
+```bash
+./findUser.sh -f <firstname> -l <lastname>
+```
 
+NOTE: You must be logged in and connected to the Purdue CS network. You also must have your SSH keys configured properly so that passwords are not needed, but that is the defualt configuration for most people.  

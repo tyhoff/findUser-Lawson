@@ -29,11 +29,11 @@ if [ $username ];
 then
     ./getData.sh | SSHSearch.pl $username
 else 
-    if (!$username || !$last) 
-    then
-        echo "Need both first and last name"
-        exit
-    fi
+    #if [ !$username ] || [ !$last ] 
+    #then
+    #    echo "Need both first and last name"
+    #    exit
+    #fi
 
     echo -e "Searching.\c"
     fing_out=`finger $last`
