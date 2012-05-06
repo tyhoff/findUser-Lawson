@@ -73,36 +73,3 @@ if (@remoteComputers) {
 } else {
 	print "No remote connections\n\n";
 }
-
-
-
-
-
-
-
-#my $num_args = $#ARGV+1;
-#for ($i=0; $i<$num_args; $i++) {
-#	if ($ARGV[$i] eq "-u") {
-#		$i++;
-#		$username = $ARGV[$i];
-#	} elsif ($ARGV[$i] eq "-f") {
-#		$i++;
-#		$first = $ARGV[$i];
-#	} elsif (@ARGV[$i] eq "-l") {
-#		$i++;
-#		$last = $ARGV[$i];
-#	}
-#}
-#if ( !$username ) {
-#	if (!$first || !$last) {
-#		print STDERR "Must include both first and last name\n";
-#		exit;
-#	} 	
-#
-#	system();
-#
-#
-#
-#}
-
-
