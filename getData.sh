@@ -10,31 +10,9 @@ function findUser {
 	echo -e "@$1\n$STR1"
 }
 
-
 #Cycle through all the machines and run findUser on each
-
-for id in {01..13}; do
-	findUser sac${id} &
-done
-
-for host in moore sslab; do
-	for id in {00..24}; do
-		findUser ${host}${id} &
-	done
-done
-
-for i in {1..5}; do
-	for j in {1..5}; do
-		findUser pod${i}-${j} &
-	done
-done
-
-for id in {00..23}; do
-	findUser escher${id} &
-done
-
-for id in {00..21}; do
-	findUser xinu${id} &
+for HOST in moore{00..24} sslab{00..24} xinu{00..21} sac{01..13} pod{1..5}-{1..5} pod0-0 mc{01..18} escher{00..23}; do
+	findUser ${HOST} &
 done
 
 sleep 2 
