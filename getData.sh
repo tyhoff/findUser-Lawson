@@ -11,7 +11,7 @@ function findUser {
 }
 
 #Cycle through all the machines and run findUser on each
-for HOST in moore{00..24} sslab{00..24} xinu{00..21} sac{01..13} pod{1..5}-{1..5} pod0-0 mc{01..18} escher{00..23} lore lore2 xena pc oj; do
+for HOST in moore{00..24} sslab{00..24} borg{00..21} xinu{00..21} sac{01..13} pod{1..5}-{1..5} pod0-0 mc{01..18} lore lore2 data xena pc oj; do
 	findUser ${HOST} &
 done
 
