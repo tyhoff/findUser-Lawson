@@ -6,7 +6,7 @@
 # ringer code
 
 function findUser {
-	STR1=`ssh $1 who -s`
+	STR1=`ssh $1 "who -s" 2> /dev/null`
 	echo -e "@$1\n$STR1"
 }
 
